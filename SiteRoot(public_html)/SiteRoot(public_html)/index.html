@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/mansStils.css">
+  <title>Mans datorikas portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 8px 10px;
+    }
+
+    nav a:hover {
+      color: #007BFF;
+    }
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f0f0f0;
+      min-width: 150px;
+      text-align: left;
+      border: 1px solid #ccc;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 8px 12px;
+      color: black;
+      font-weight: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      color: #007BFF;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    img, video {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Mans datorikas portfolio</h1>
+  <nav>
+    <a href="#teksts">Tekstapstrāde</a>
+
+    <div class="dropdown">
+      <a href="#atteli">Attēlu apstrāde ▾</a>
+      <div class="dropdown-content">
+        <a href="#raster">Rastra grafika</a>
+        <a href="#vektors">Vektorgrafika</a>
+      </div>
+    </div>
+
+    <a href="#modelis">3D modelēšana</a>
+    <a href="#video">Video</a>
+    <a href="#excel">Izklājlapas</a>
+    <a href="otrais.html" target="_blank">Individuālā tēma</a>
+  </nav>
+  <section id="teksts">
+    <h2>Tekstapstrāde</h2>
+    <p>Darbs ar Word rīkiem.</p>
+  </section>
+
+  <section id="atteli">
+    <h2>Attēlu apstrāde</h2>
+  </section>
+
+  <section id="raster">
+    <h3>Rastra grafika</h3>
+    <p>Attēlu rediģēšana programmā GIMP un gif veidošana.</p>
+  </section>
+
+  <section id="vektors">
+    <h3>Vektorgrafika</h3>
+    <p>Logotipa izstrāde Inkscape platformā.</p>
+    <img src="images/Logo.jpg" width="200" alt="Logo">
+  </section>
+
+  <section id="modelis">
+    <h2>3D modelēšana</h2>
+     <p>Darbs ar 3D printeri un 3D modeļa izstrāde.</p>
+    <img src="images/Skaldne.jpeg" width="150" alt="3D kuba skaldne">
+  </section>
+
+  <section id="video">
+    <h2>Video</h2>
+    <video width="320" height="180" controls>
+      <source src="images/Video.mp4" type="video/mp4">
+      Jūsu pārlūkprogramma neatbalsta video.
+    </video>
+  </section>
+
+  <section id="excel">
+    <h2>Izklājlapas</h2
+     <p>Darbs ar Excel rīkiem.</p>
+    <a href="images/Aprēķini.xlsx" download>Lejupielādēt Excel failu</a>
+  </section>
+</body>
+</html>
